@@ -286,7 +286,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         <connections>
-                                            <action selector="textField1EditingChanged:" destination="rw3-nR-p9m" eventType="editingChanged" id="4p9-Oh-uFs"/>
+                                            <action selector="editingChanged:" destination="rw3-nR-p9m" eventType="editingChanged" id="Ue3-cr-oqI"/>
                                             <outlet property="delegate" destination="rw3-nR-p9m" id="ZOr-0N-hai"/>
                                         </connections>
                                     </textField>
@@ -294,7 +294,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         <connections>
-                                            <action selector="textField2EditingChanged:" destination="rw3-nR-p9m" eventType="editingChanged" id="o2G-Ad-kle"/>
+                                            <action selector="editingChanged:" destination="rw3-nR-p9m" eventType="editingChanged" id="J0l-NU-ihp"/>
                                             <outlet property="delegate" destination="rw3-nR-p9m" id="iO4-kI-bdd"/>
                                         </connections>
                                     </textField>
@@ -305,7 +305,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         <connections>
-                                            <action selector="textField3EditingChanged:" destination="rw3-nR-p9m" eventType="editingChanged" id="gIO-Vj-0Lg"/>
+                                            <action selector="editingChanged:" destination="rw3-nR-p9m" eventType="editingChanged" id="bSW-Ji-7fQ"/>
                                             <outlet property="delegate" destination="rw3-nR-p9m" id="VSQ-Bu-nta"/>
                                         </connections>
                                     </textField>
@@ -316,7 +316,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         <connections>
-                                            <action selector="textField4EditingChanged:" destination="rw3-nR-p9m" eventType="editingChanged" id="lOE-YN-3sb"/>
+                                            <action selector="editingChanged:" destination="rw3-nR-p9m" eventType="editingChanged" id="Ok3-So-v3E"/>
                                             <outlet property="delegate" destination="rw3-nR-p9m" id="jfb-ef-Q0F"/>
                                         </connections>
                                     </textField>
@@ -327,7 +327,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         <connections>
-                                            <action selector="textField5EditingChanged:" destination="rw3-nR-p9m" eventType="editingChanged" id="gWU-3c-YBh"/>
+                                            <action selector="editingChanged:" destination="rw3-nR-p9m" eventType="editingChanged" id="lQj-xX-c8h"/>
                                             <outlet property="delegate" destination="rw3-nR-p9m" id="wDh-8a-SZr"/>
                                         </connections>
                                     </textField>
@@ -338,7 +338,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                         <connections>
-                                            <action selector="textField6EditingChanged:" destination="rw3-nR-p9m" eventType="editingChanged" id="Fqe-pY-M7Q"/>
+                                            <action selector="editingChanged:" destination="rw3-nR-p9m" eventType="editingChanged" id="6vl-IM-pyk"/>
                                             <outlet property="delegate" destination="rw3-nR-p9m" id="EEQ-L1-L6t"/>
                                         </connections>
                                     </textField>
@@ -1217,6 +1217,86 @@
             <point key="canvasLocation" x="-171" y="-432"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="addDecisionStep1ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/addDecisionStep1ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="updateNextButtonStatus:"/>
+                <relationship kind="outlet" name="questionTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="addDecisionStep2ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/addDecisionStep2ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="editingChanged:" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="textField1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField3" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField4" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField5" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textField6" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="addDecisionStep3ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/addDecisionStep3ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="label1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="label2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="label3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="label4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="label5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="label6" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="slider1" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="slider2" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="slider3" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="slider4" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="slider5" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="slider6" candidateClass="UISlider"/>
+            </relationships>
+        </class>
+        <class className="canundrumLaunchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/canundrumLaunchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="startButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="decisionsMasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/decisionsMasterViewController.h"/>
+        </class>
+        <class className="editDecisionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/editDecisionViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="action" name="done:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="decisionNameField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outletCollection" name="attributeFields" candidateClass="UITextField"/>
+                <relationship kind="outletCollection" name="attributeSliders" candidateClass="UISlider"/>
+            </relationships>
+        </class>
+        <class className="editOptionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/editOptionViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="action" name="done:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="action" name="enableOrDisableDoneButton"/>
+                <relationship kind="outlet" name="doneButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="optionNameField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outletCollection" name="labels" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="sliders" candidateClass="UISlider"/>
+            </relationships>
+        </class>
+        <class className="optionsTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/optionsTableViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

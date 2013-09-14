@@ -89,22 +89,7 @@ NSMutableArray *textFields;
     self.activeTextField = nil;
 }
 
-- (IBAction)textField1EditingChanged:(id)sender {
-    [self setNextBarButtonEnabledOrDisabled];
-}
-- (IBAction)textField2EditingChanged:(id)sender {
-    [self setNextBarButtonEnabledOrDisabled];
-}
-- (IBAction)textField3EditingChanged:(id)sender {
-    [self setNextBarButtonEnabledOrDisabled];
-}
-- (IBAction)textField4EditingChanged:(id)sender {
-    [self setNextBarButtonEnabledOrDisabled];
-}
-- (IBAction)textField5EditingChanged:(id)sender {
-    [self setNextBarButtonEnabledOrDisabled];
-}
-- (IBAction)textField6EditingChanged:(id)sender {
+- (IBAction)editingChanged:(UITextField *)sender {
     [self setNextBarButtonEnabledOrDisabled];
 }
 
