@@ -8,19 +8,12 @@
 
 #import "addDecisionStep2ViewController.h"
 
-static const CGFloat KEYBOARD_ANIMATION_DURATION = 0.3;
-static const CGFloat MINIMUM_SCROLL_FRACTION = 0.2;
-static const CGFloat MAXIMUM_SCROLL_FRACTION = 0.8;
-static const CGFloat PORTRAIT_KEYBOARD_HEIGHT = 216;
-static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
-
 @interface addDecisionStep2ViewController ()
-
+    @property (nonatomic, assign) UITextField *activeTextField;
 @end
 
 @implementation addDecisionStep2ViewController
 
-CGFloat animatedDistance;
 @synthesize textField1;
 @synthesize textField2;
 @synthesize textField3;
@@ -88,62 +81,12 @@ NSMutableArray *textFields;
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
-    CGRect textFieldRect =
-    [self.view.window convertRect:textField.bounds fromView:textField];
-    CGRect viewRect =
-    [self.view.window convertRect:self.view.bounds fromView:self.view];
-    CGFloat midline = textFieldRect.origin.y + 0.5 * textFieldRect.size.height;
-    CGFloat numerator =
-    midline - viewRect.origin.y
-    - MINIMUM_SCROLL_FRACTION * viewRect.size.height;
-    CGFloat denominator =
-    (MAXIMUM_SCROLL_FRACTION - MINIMUM_SCROLL_FRACTION)
-    * viewRect.size.height;
-    CGFloat heightFraction = numerator / denominator;
-    if (heightFraction < 0.0)
-    {
-        heightFraction = 0.0;
-    }
-    else if (heightFraction > 1.0)
-    {
-        heightFraction = 1.0;
-    }
-    UIInterfaceOrientation orientation =
-    [[UIApplication sharedApplication] statusBarOrientation];
-    if (orientation == UIInterfaceOrientationPortrait ||
-        orientation == UIInterfaceOrientationPortraitUpsideDown)
-    {
-        animatedDistance = floor(PORTRAIT_KEYBOARD_HEIGHT * heightFraction);
-    }
-    else
-    {
-        animatedDistance = floor(LANDSCAPE_KEYBOARD_HEIGHT * heightFraction);
-    }
-    CGRect viewFrame = self.view.frame;
-    viewFrame.origin.y -= animatedDistance;
-    
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationBeginsFromCurrentState:YES];
-    [UIView setAnimationDuration:KEYBOARD_ANIMATION_DURATION];
-    
-    [self.view setFrame:viewFrame];
-    
-    [UIView commitAnimations];
+    self.activeTextField = textField;
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
-    CGRect viewFrame = self.view.frame;
-    viewFrame.origin.y += animatedDistance;
-    
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationBeginsFromCurrentState:YES];
-    [UIView setAnimationDuration:KEYBOARD_ANIMATION_DURATION];
-    
-    [self.view setFrame:viewFrame];
-    
-    [UIView commitAnimations];
-    animatedDistance = 0;
+    self.activeTextField = nil;
 }
 
 - (IBAction)textField1EditingChanged:(id)sender {
@@ -260,7 +203,38 @@ NSMutableArray *textFields;
 
 // Scroll view delegate methods
 -(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
-    [self.view endEditing:NO];
+    //[self.view endEditing:NO];
+}
+
+
+// Auto scrolling behaviour on keyboard show
+- (void)keyboardWasShown:(NSNotification *)notification
+{
+    CGFloat keyboardHeight = [[[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size.height;
+    //CGFloat navBarHeight = self.navBar.frame.size.height;
+    CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+    // Adjust the bottom content inset of scroll view by the keyboard height.
+    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardHeight+35, 0.0);
+    self.scrollView.contentInset = contentInsets;
+    self.scrollView.scrollIndicatorInsets = contentInsets;
+    // Scroll the target text field into view.
+    CGRect scrollRect = self.scrollView.frame;
+    scrollRect.origin.y = 0.0;  // Text fields frames are relative to this
+    scrollRect.size.height = self.view.frame.size.height /*- navBarHeight*/ - keyboardHeight - statusBarHeight;
+    if (!CGRectContainsPoint(scrollRect, self.activeTextField.frame.origin)) {
+        CGPoint scrollPoint = CGPointMake(0.0, self.activeTextField.frame.origin.y + (80 - keyboardHeight));
+        [self.scrollView setContentOffset:scrollPoint animated:YES];
+    }
+}
+
+-(void) resetScrollViewInsets {
+    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, 0, 0.0);
+    self.scrollView.contentInset = contentInsets;
+    self.scrollView.scrollIndicatorInsets = contentInsets;
+}
+
+- (void) keyboardWillHide:(NSNotification *)notification {
+    [self resetScrollViewInsets];
 }
 
 @end
