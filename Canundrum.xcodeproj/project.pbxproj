@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A10A1F6017DCDA130011C3D6 /* editDecisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A10A1F5F17DCDA130011C3D6 /* editDecisionViewController.m */; };
+		A12CAF33162E2B2400F7EDA5 /* addDecisionStep3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12CAF32162E2B2400F7EDA5 /* addDecisionStep3ViewController.m */; };
+		A15DC458163C1424005B5EC4 /* optionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15DC457163C1424005B5EC4 /* optionsTableViewController.m */; };
+		A15DC460163C179D005B5EC4 /* decision.m in Sources */ = {isa = PBXBuildFile; fileRef = A15DC45F163C179D005B5EC4 /* decision.m */; };
+		A15DC466163C1C8D005B5EC4 /* option.m in Sources */ = {isa = PBXBuildFile; fileRef = A15DC465163C1C8D005B5EC4 /* option.m */; };
+		A15DC469163C1D71005B5EC4 /* decisionsDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15DC468163C1D71005B5EC4 /* decisionsDataController.m */; };
+		A15DC46C163C2250005B5EC4 /* canundrumLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15DC46B163C2250005B5EC4 /* canundrumLaunchViewController.m */; };
 		A18454EF162E0178002B3E56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18454EE162E0178002B3E56 /* UIKit.framework */; };
 		A18454F1162E0178002B3E56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18454F0162E0178002B3E56 /* Foundation.framework */; };
 		A18454F3162E0178002B3E56 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18454F2162E0178002B3E56 /* CoreGraphics.framework */; };
@@ -18,10 +25,27 @@
 		A1845505162E0178002B3E56 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1845504162E0178002B3E56 /* Default-568h@2x.png */; };
 		A1845508162E0178002B3E56 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1845506162E0178002B3E56 /* MainStoryboard.storyboard */; };
 		A184550B162E0178002B3E56 /* decisionsMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A184550A162E0178002B3E56 /* decisionsMasterViewController.m */; };
-		A184550E162E0178002B3E56 /* decisionsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A184550D162E0178002B3E56 /* decisionsDetailViewController.m */; };
+		A184550E162E0178002B3E56 /* editOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A184550D162E0178002B3E56 /* editOptionViewController.m */; };
+		A1845516162E2015002B3E56 /* addDecisionStep1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1845515162E2015002B3E56 /* addDecisionStep1ViewController.m */; };
+		A184551D162E215A002B3E56 /* addDecisionStep2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A184551C162E215A002B3E56 /* addDecisionStep2ViewController.m */; };
+		A1BB2F2A17E11FB600A78812 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BB2F2817E11E9100A78812 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A10A1F5E17DCDA130011C3D6 /* editDecisionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = editDecisionViewController.h; sourceTree = "<group>"; };
+		A10A1F5F17DCDA130011C3D6 /* editDecisionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = editDecisionViewController.m; sourceTree = "<group>"; };
+		A12CAF31162E2B2400F7EDA5 /* addDecisionStep3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addDecisionStep3ViewController.h; sourceTree = "<group>"; };
+		A12CAF32162E2B2400F7EDA5 /* addDecisionStep3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addDecisionStep3ViewController.m; sourceTree = "<group>"; };
+		A15DC456163C1424005B5EC4 /* optionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = optionsTableViewController.h; sourceTree = "<group>"; };
+		A15DC457163C1424005B5EC4 /* optionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = optionsTableViewController.m; sourceTree = "<group>"; };
+		A15DC45E163C179D005B5EC4 /* decision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decision.h; sourceTree = "<group>"; };
+		A15DC45F163C179D005B5EC4 /* decision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = decision.m; sourceTree = "<group>"; };
+		A15DC464163C1C8D005B5EC4 /* option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = option.h; sourceTree = "<group>"; };
+		A15DC465163C1C8D005B5EC4 /* option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = option.m; sourceTree = "<group>"; };
+		A15DC467163C1D71005B5EC4 /* decisionsDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decisionsDataController.h; sourceTree = "<group>"; };
+		A15DC468163C1D71005B5EC4 /* decisionsDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = decisionsDataController.m; sourceTree = "<group>"; };
+		A15DC46A163C2250005B5EC4 /* canundrumLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = canundrumLaunchViewController.h; sourceTree = "<group>"; };
+		A15DC46B163C2250005B5EC4 /* canundrumLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = canundrumLaunchViewController.m; sourceTree = "<group>"; };
 		A18454EA162E0178002B3E56 /* Canundrum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canundrum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18454EE162E0178002B3E56 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A18454F0162E0178002B3E56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,8 +62,13 @@
 		A1845507162E0178002B3E56 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A1845509162E0178002B3E56 /* decisionsMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = decisionsMasterViewController.h; sourceTree = "<group>"; };
 		A184550A162E0178002B3E56 /* decisionsMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = decisionsMasterViewController.m; sourceTree = "<group>"; };
-		A184550C162E0178002B3E56 /* decisionsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = decisionsDetailViewController.h; sourceTree = "<group>"; };
-		A184550D162E0178002B3E56 /* decisionsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = decisionsDetailViewController.m; sourceTree = "<group>"; };
+		A184550C162E0178002B3E56 /* editOptionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = editOptionViewController.h; sourceTree = "<group>"; };
+		A184550D162E0178002B3E56 /* editOptionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = editOptionViewController.m; sourceTree = "<group>"; };
+		A1845514162E2015002B3E56 /* addDecisionStep1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addDecisionStep1ViewController.h; sourceTree = "<group>"; };
+		A1845515162E2015002B3E56 /* addDecisionStep1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addDecisionStep1ViewController.m; sourceTree = "<group>"; };
+		A184551B162E215A002B3E56 /* addDecisionStep2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addDecisionStep2ViewController.h; sourceTree = "<group>"; };
+		A184551C162E215A002B3E56 /* addDecisionStep2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addDecisionStep2ViewController.m; sourceTree = "<group>"; };
+		A1BB2F2817E11E9100A78812 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1BB2F2A17E11FB600A78812 /* QuartzCore.framework in Frameworks */,
 				A18454EF162E0178002B3E56 /* UIKit.framework in Frameworks */,
 				A18454F1162E0178002B3E56 /* Foundation.framework in Frameworks */,
 				A18454F3162E0178002B3E56 /* CoreGraphics.framework in Frameworks */,
@@ -59,6 +89,7 @@
 		A18454DF162E0178002B3E56 = {
 			isa = PBXGroup;
 			children = (
+				A1BB2F2817E11E9100A78812 /* QuartzCore.framework */,
 				A18454F4162E0178002B3E56 /* Canundrum */,
 				A18454ED162E0178002B3E56 /* Frameworks */,
 				A18454EB162E0178002B3E56 /* Products */,
@@ -86,13 +117,19 @@
 		A18454F4162E0178002B3E56 /* Canundrum */ = {
 			isa = PBXGroup;
 			children = (
-				A18454FD162E0178002B3E56 /* decisionsAppDelegate.h */,
-				A18454FE162E0178002B3E56 /* decisionsAppDelegate.m */,
+				A1AE6E621785A07F006D9AF6 /* Model */,
 				A1845506162E0178002B3E56 /* MainStoryboard.storyboard */,
+				A15DC46A163C2250005B5EC4 /* canundrumLaunchViewController.h */,
+				A15DC46B163C2250005B5EC4 /* canundrumLaunchViewController.m */,
+				A1C540B617A52D4000964942 /* addDecision */,
 				A1845509162E0178002B3E56 /* decisionsMasterViewController.h */,
 				A184550A162E0178002B3E56 /* decisionsMasterViewController.m */,
-				A184550C162E0178002B3E56 /* decisionsDetailViewController.h */,
-				A184550D162E0178002B3E56 /* decisionsDetailViewController.m */,
+				A10A1F5E17DCDA130011C3D6 /* editDecisionViewController.h */,
+				A10A1F5F17DCDA130011C3D6 /* editDecisionViewController.m */,
+				A15DC456163C1424005B5EC4 /* optionsTableViewController.h */,
+				A15DC457163C1424005B5EC4 /* optionsTableViewController.m */,
+				A184550C162E0178002B3E56 /* editOptionViewController.h */,
+				A184550D162E0178002B3E56 /* editOptionViewController.m */,
 				A18454F5162E0178002B3E56 /* Supporting Files */,
 			);
 			path = Canundrum;
@@ -101,6 +138,8 @@
 		A18454F5162E0178002B3E56 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A18454FD162E0178002B3E56 /* decisionsAppDelegate.h */,
+				A18454FE162E0178002B3E56 /* decisionsAppDelegate.m */,
 				A18454F6162E0178002B3E56 /* Canundrum-Info.plist */,
 				A18454F7162E0178002B3E56 /* InfoPlist.strings */,
 				A18454FA162E0178002B3E56 /* main.m */,
@@ -110,6 +149,32 @@
 				A1845504162E0178002B3E56 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1AE6E621785A07F006D9AF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A15DC467163C1D71005B5EC4 /* decisionsDataController.h */,
+				A15DC468163C1D71005B5EC4 /* decisionsDataController.m */,
+				A15DC45E163C179D005B5EC4 /* decision.h */,
+				A15DC45F163C179D005B5EC4 /* decision.m */,
+				A15DC464163C1C8D005B5EC4 /* option.h */,
+				A15DC465163C1C8D005B5EC4 /* option.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A1C540B617A52D4000964942 /* addDecision */ = {
+			isa = PBXGroup;
+			children = (
+				A1845514162E2015002B3E56 /* addDecisionStep1ViewController.h */,
+				A1845515162E2015002B3E56 /* addDecisionStep1ViewController.m */,
+				A184551B162E215A002B3E56 /* addDecisionStep2ViewController.h */,
+				A184551C162E215A002B3E56 /* addDecisionStep2ViewController.m */,
+				A12CAF31162E2B2400F7EDA5 /* addDecisionStep3ViewController.h */,
+				A12CAF32162E2B2400F7EDA5 /* addDecisionStep3ViewController.m */,
+			);
+			name = addDecision;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +247,16 @@
 				A18454FB162E0178002B3E56 /* main.m in Sources */,
 				A18454FF162E0178002B3E56 /* decisionsAppDelegate.m in Sources */,
 				A184550B162E0178002B3E56 /* decisionsMasterViewController.m in Sources */,
-				A184550E162E0178002B3E56 /* decisionsDetailViewController.m in Sources */,
+				A184550E162E0178002B3E56 /* editOptionViewController.m in Sources */,
+				A1845516162E2015002B3E56 /* addDecisionStep1ViewController.m in Sources */,
+				A184551D162E215A002B3E56 /* addDecisionStep2ViewController.m in Sources */,
+				A12CAF33162E2B2400F7EDA5 /* addDecisionStep3ViewController.m in Sources */,
+				A15DC458163C1424005B5EC4 /* optionsTableViewController.m in Sources */,
+				A15DC460163C179D005B5EC4 /* decision.m in Sources */,
+				A15DC466163C1C8D005B5EC4 /* option.m in Sources */,
+				A15DC469163C1D71005B5EC4 /* decisionsDataController.m in Sources */,
+				A15DC46C163C2250005B5EC4 /* canundrumLaunchViewController.m in Sources */,
+				A10A1F6017DCDA130011C3D6 /* editDecisionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +373,7 @@
 				A1845513162E0178002B3E56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

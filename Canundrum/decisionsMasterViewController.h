@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "decision.h"
+#import "editDecisionViewController.h"
 
-@interface decisionsMasterViewController : UITableViewController
+@class decisionsDataController;
 
+@interface decisionsMasterViewController: UITableViewController <editDecisionDelegate>
+    @property (retain, nonatomic) decisionsDataController *dataController;
 @end
