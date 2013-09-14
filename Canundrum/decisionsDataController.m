@@ -46,7 +46,7 @@
 }
 
 - (void)addDecision:(decision *)decision{
-    [self.masterDecisionsList addObject:[decision mutableCopy]];
+    [self.masterDecisionsList insertObject:[decision mutableCopy] atIndex:0];
 }
 
 @end

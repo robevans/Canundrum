@@ -669,10 +669,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
+                                            <action selector="attributeEditingChanged:" destination="eoj-OF-IvY" eventType="editingChanged" id="2dA-Ai-e69"/>
                                             <outlet property="delegate" destination="eoj-OF-IvY" id="rKy-l3-2lG"/>
                                         </connections>
                                     </textField>
-                                    <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="m4q-5P-lRr">
+                                    <slider opaque="NO" tag="1" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="m4q-5P-lRr">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="183" id="vVZ-ez-hri"/>
                                         </constraints>
@@ -691,10 +692,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
+                                            <action selector="attributeEditingChanged:" destination="eoj-OF-IvY" eventType="editingChanged" id="yhs-YY-aRs"/>
                                             <outlet property="delegate" destination="eoj-OF-IvY" id="xYx-dP-S8w"/>
                                         </connections>
                                     </textField>
-                                    <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="h3M-3C-JvW"/>
+                                    <slider opaque="NO" tag="2" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="h3M-3C-JvW"/>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Importance:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmn-k8-NnN">
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -709,10 +711,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
+                                            <action selector="attributeEditingChanged:" destination="eoj-OF-IvY" eventType="editingChanged" id="k3J-0d-iEN"/>
                                             <outlet property="delegate" destination="eoj-OF-IvY" id="ckE-Sh-S3q"/>
                                         </connections>
                                     </textField>
-                                    <slider opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="52b-6u-8kU"/>
+                                    <slider opaque="NO" tag="3" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="52b-6u-8kU"/>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Importance:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2A-vz-xGz">
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -727,10 +730,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
+                                            <action selector="attributeEditingChanged:" destination="eoj-OF-IvY" eventType="editingChanged" id="Pxb-34-np0"/>
                                             <outlet property="delegate" destination="eoj-OF-IvY" id="v9S-ze-yRA"/>
                                         </connections>
                                     </textField>
-                                    <slider opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hIK-eA-q87"/>
+                                    <slider opaque="NO" tag="4" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hIK-eA-q87"/>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Importance:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8s-fW-j8y">
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -745,10 +749,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
+                                            <action selector="attributeEditingChanged:" destination="eoj-OF-IvY" eventType="editingChanged" id="JKz-VB-sfk"/>
                                             <outlet property="delegate" destination="eoj-OF-IvY" id="kUb-TG-lJR"/>
                                         </connections>
                                     </textField>
-                                    <slider opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="k3c-nw-Gle"/>
+                                    <slider opaque="NO" tag="5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="k3c-nw-Gle"/>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Importance:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wU-sZ-B6R">
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -763,10 +768,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
+                                            <action selector="attributeEditingChanged:" destination="eoj-OF-IvY" eventType="editingChanged" id="es9-dO-xGN"/>
                                             <outlet property="delegate" destination="eoj-OF-IvY" id="CNI-E4-IGo"/>
                                         </connections>
                                     </textField>
-                                    <slider opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="B3w-Hs-4UF"/>
+                                    <slider opaque="NO" tag="6" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="B3w-Hs-4UF"/>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Eyc-bP-p4Z" firstAttribute="top" secondItem="zTy-5J-JmD" secondAttribute="top" constant="363" id="0d0-jX-4fw"/>
@@ -777,6 +783,7 @@
                                     <constraint firstItem="lqn-Bj-j4F" firstAttribute="baseline" secondItem="RzM-an-uL6" secondAttribute="baseline" type="default" id="5Pe-82-uGl"/>
                                     <constraint firstItem="h3M-3C-JvW" firstAttribute="leading" secondItem="52b-6u-8kU" secondAttribute="leading" type="default" id="6OZ-18-3iI"/>
                                     <constraint firstItem="m17-nQ-H2w" firstAttribute="leading" secondItem="zTy-5J-JmD" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="6mL-KR-l49"/>
+                                    <constraint firstAttribute="bottom" secondItem="B3w-Hs-4UF" secondAttribute="bottom" constant="56" id="6za-0s-Em2"/>
                                     <constraint firstAttribute="trailing" secondItem="m4q-5P-lRr" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7qQ-ja-lYh"/>
                                     <constraint firstItem="R03-mE-517" firstAttribute="trailing" secondItem="FXJ-ct-Doh" secondAttribute="trailing" type="default" id="7r6-uw-u3e"/>
                                     <constraint firstItem="lqn-Bj-j4F" firstAttribute="leading" secondItem="RzM-an-uL6" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="81E-cN-GMq"/>
@@ -794,7 +801,6 @@
                                     <constraint firstItem="1RK-hN-bZX" firstAttribute="top" secondItem="zTy-5J-JmD" secondAttribute="top" constant="221" id="JOF-J8-jVF"/>
                                     <constraint firstItem="1RM-7o-Oew" firstAttribute="leading" secondItem="W9I-5N-UhY" secondAttribute="leading" type="default" id="JvZ-8X-pX5"/>
                                     <constraint firstAttribute="trailing" secondItem="hIK-eA-q87" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="KGE-Xc-GSM"/>
-                                    <constraint firstItem="m4q-5P-lRr" firstAttribute="top" secondItem="FXJ-ct-Doh" secondAttribute="top" type="default" id="LPw-gE-uTP"/>
                                     <constraint firstItem="E8s-fW-j8y" firstAttribute="top" secondItem="Eyc-bP-p4Z" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Mbi-V6-0YI"/>
                                     <constraint firstItem="Ut7-sn-u2u" firstAttribute="leading" secondItem="1RK-hN-bZX" secondAttribute="leading" type="default" id="MyK-i3-Lr5"/>
                                     <constraint firstAttribute="trailing" secondItem="lqn-Bj-j4F" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="O1v-Tr-lgs"/>
@@ -803,6 +809,7 @@
                                     <constraint firstItem="E8s-fW-j8y" firstAttribute="trailing" secondItem="O2A-vz-xGz" secondAttribute="trailing" type="default" id="OZv-go-hq8"/>
                                     <constraint firstItem="hIK-eA-q87" firstAttribute="leading" secondItem="k3c-nw-Gle" secondAttribute="leading" type="default" id="QLD-w0-8pZ"/>
                                     <constraint firstItem="B3w-Hs-4UF" firstAttribute="top" secondItem="zTy-5J-JmD" secondAttribute="top" constant="462" id="S68-8j-XT8"/>
+                                    <constraint firstItem="m4q-5P-lRr" firstAttribute="bottom" secondItem="FXJ-ct-Doh" secondAttribute="bottom" type="default" id="SC0-gU-JdP"/>
                                     <constraint firstItem="W9I-5N-UhY" firstAttribute="top" secondItem="zTy-5J-JmD" secondAttribute="top" constant="359" id="Scy-F9-FIx"/>
                                     <constraint firstItem="R03-mE-517" firstAttribute="top" secondItem="m17-nQ-H2w" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Sf8-5d-vpw"/>
                                     <constraint firstItem="52b-6u-8kU" firstAttribute="top" secondItem="zTy-5J-JmD" secondAttribute="top" constant="255" id="So0-a4-bLa"/>
@@ -833,7 +840,6 @@
                                     <constraint firstItem="RzM-an-uL6" firstAttribute="leading" secondItem="zTy-5J-JmD" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="knf-Cs-FsJ"/>
                                     <constraint firstItem="R03-mE-517" firstAttribute="leading" secondItem="zTy-5J-JmD" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="omA-pz-7Y1"/>
                                     <constraint firstItem="FXJ-ct-Doh" firstAttribute="top" secondItem="zZn-Un-Z8H" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="phH-yb-0s3"/>
-                                    <constraint firstAttribute="bottom" secondItem="B3w-Hs-4UF" secondAttribute="bottom" constant="12" id="qwK-89-z3f"/>
                                     <constraint firstItem="6wU-sZ-B6R" firstAttribute="top" secondItem="oMd-ND-Pfc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="sP3-lY-ZWB"/>
                                     <constraint firstItem="1RK-hN-bZX" firstAttribute="leading" secondItem="Ufx-sN-K1G" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="t6D-Bg-Mem"/>
                                     <constraint firstItem="h3M-3C-JvW" firstAttribute="top" secondItem="zTy-5J-JmD" secondAttribute="top" constant="186" id="uj4-5Y-4Od"/>
@@ -1270,6 +1276,7 @@
         <class className="editDecisionViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/editDecisionViewController.h"/>
             <relationships>
+                <relationship kind="action" name="attributeEditingChanged:" candidateClass="UITextField"/>
                 <relationship kind="action" name="cancel:" candidateClass="UIBarButtonItem"/>
                 <relationship kind="action" name="done:" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="decisionNameField" candidateClass="UITextField"/>

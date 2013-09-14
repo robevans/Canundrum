@@ -186,17 +186,10 @@ NSMutableArray *textFields;
     [super viewWillDisappear:animated];
 }
 
-// Scroll view delegate methods
--(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
-    //[self.view endEditing:NO];
-}
-
-
 // Auto scrolling behaviour on keyboard show
 - (void)keyboardWasShown:(NSNotification *)notification
 {
     CGFloat keyboardHeight = [[[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size.height;
-    //CGFloat navBarHeight = self.navBar.frame.size.height;
     CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
     // Adjust the bottom content inset of scroll view by the keyboard height.
     UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardHeight+35, 0.0);
@@ -205,7 +198,7 @@ NSMutableArray *textFields;
     // Scroll the target text field into view.
     CGRect scrollRect = self.scrollView.frame;
     scrollRect.origin.y = 0.0;  // Text fields frames are relative to this
-    scrollRect.size.height = self.view.frame.size.height /*- navBarHeight*/ - keyboardHeight - statusBarHeight;
+    scrollRect.size.height = self.view.frame.size.height - keyboardHeight - statusBarHeight;
     if (!CGRectContainsPoint(scrollRect, self.activeTextField.frame.origin)) {
         CGPoint scrollPoint = CGPointMake(0.0, self.activeTextField.frame.origin.y + (80 - keyboardHeight));
         [self.scrollView setContentOffset:scrollPoint animated:YES];

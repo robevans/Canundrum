@@ -54,12 +54,19 @@
     [self displayDecisionData:self.selectedDecision];
 }
 
+- (IBAction)attributeEditingChanged:(UITextField *)sender {
+    UISlider *slider = self.attributeSliders[[self.attributeFields indexOfObject:sender]];
+    slider.enabled = sender.text.length > 0 ? true : false;
+}
+
+
 -(void)displayDecisionData:(decision *) decision {
     self.decisionNameField.text = decision.name;
     for (int i=0; i<decision.attributesList.count; i++) {
         UITextField *field = self.attributeFields[i];
         UISlider *slider = self.attributeSliders[i];
         field.text = decision.attributesList[i];
+        slider.enabled = true;
         slider.value = [decision.weightingsList[i] floatValue];
     }
 }
@@ -82,6 +89,21 @@
     }
 }
 
+// Text field delegate methods
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    self.activeTextField = textField;
+}
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    self.activeTextField = nil;
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    NSLog(@"textFieldShouldReturn");
+    [textField resignFirstResponder];
+    return NO;
+}
+
 // Auto scrolling behaviour on keyboard show
 - (void)keyboardWasShown:(NSNotification *)notification
 {
@@ -101,15 +123,26 @@
         [self.scrollView setContentOffset:scrollPoint animated:YES];
     }
 }
-
 -(void) resetScrollViewInsets {
     UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, 35, 0.0);
     self.scrollView.contentInset = contentInsets;
     self.scrollView.scrollIndicatorInsets = contentInsets;
 }
-
 - (void) keyboardWillHide:(NSNotification *)notification {
     [self resetScrollViewInsets];
+}
+
+// Nav bar actions
+- (IBAction)cancel:(UIBarButtonItem *)sender {
+    if ([self.delegate respondsToSelector:@selector(editDecisionViewControllerDidCancel:)]) {
+        [self.delegate editDecisionViewControllerDidCancel:self];
+    }
+}
+- (IBAction)done:(UIBarButtonItem *)sender {
+    [self saveDecisionData];
+    if ([self.delegate respondsToSelector:@selector(editDecisionViewController:didEditDecision:)]) {
+        [self.delegate editDecisionViewController:self didEditDecision:self.selectedDecision];
+    }
 }
 
 -(void)dealloc {
@@ -120,33 +153,5 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-// Text field delegate methods
-- (void)textFieldDidBeginEditing:(UITextField *)textField
-{
-    self.activeTextField = textField;
-}
-- (void)textFieldDidEndEditing:(UITextField *)textField
-{
-    self.activeTextField = nil;
-}
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    NSLog(@"textFieldShouldReturn");
-    [textField resignFirstResponder];
-    return NO;
-}
-
-- (IBAction)cancel:(UIBarButtonItem *)sender {
-    if ([self.delegate respondsToSelector:@selector(editDecisionViewControllerDidCancel:)]) {
-        [self.delegate editDecisionViewControllerDidCancel:self];
-    }
-}
-
-- (IBAction)done:(UIBarButtonItem *)sender {
-    [self saveDecisionData];
-    if ([self.delegate respondsToSelector:@selector(editDecisionViewController:didEditDecision:)]) {
-        [self.delegate editDecisionViewController:self didEditDecision:self.selectedDecision];
-    }
 }
 @end
