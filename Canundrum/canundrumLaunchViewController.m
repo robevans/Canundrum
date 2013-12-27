@@ -23,7 +23,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.dataController = [[decisionsDataController alloc] init];
     }
     return self;
 }
@@ -43,9 +42,6 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"launchToMaster"]) {
-        UINavigationController *nc = [segue destinationViewController];
-        decisionsMasterViewController *mc = [[nc viewControllers] objectAtIndex:0];
-        mc.dataController = self.dataController;
     }
 }
 
