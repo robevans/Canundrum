@@ -192,7 +192,7 @@ NSMutableArray *textFields;
     CGFloat keyboardHeight = [[[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size.height;
     CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
     // Adjust the bottom content inset of scroll view by the keyboard height.
-    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardHeight+35, 0.0);
+    UIEdgeInsets contentInsets = UIEdgeInsetsMake(50, 0.0, keyboardHeight+35, 0.0);
     self.scrollView.contentInset = contentInsets;
     self.scrollView.scrollIndicatorInsets = contentInsets;
     // Scroll the target text field into view.
@@ -206,7 +206,7 @@ NSMutableArray *textFields;
 }
 
 -(void) resetScrollViewInsets {
-    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, 0, 0.0);
+    UIEdgeInsets contentInsets = UIEdgeInsetsMake(50, 0.0, 0, 0.0);
     self.scrollView.contentInset = contentInsets;
     self.scrollView.scrollIndicatorInsets = contentInsets;
 }
